@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/btnVideoUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_video" />
+
+    <LinearLayout
+        android:id="@+id/linearControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivPlay"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_baseline_play_arrow_24" />
+
+        <ImageView
+            android:id="@+id/ivStop"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/ic_baseline_stop_24" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAudioUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/upload_audio" />
+
+    <Button
+        android:id="@+id/btnMerge"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="Merge Audio and Video" />
+
+</LinearLayout>

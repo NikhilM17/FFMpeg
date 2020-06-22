@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FF_MEPG</string>
+    <string name="upload_video">Upload Video</string>
+    <string name="upload_audio">Upload Audio</string>
+</resources>
